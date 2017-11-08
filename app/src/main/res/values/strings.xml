@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PicF</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intonation_introduce">Introduce something here</string>
+    <string name="setting_text">Setting something here</string>
+
+    <!-- TODO: Information of Author-->
+    <string name="author_app">Created by: Le Luong Vien</string>
+    <string name="email">Email: Luongvien.binhson@gmail.com</string>
+    <string name="facebook">Facebook: Http://facebook.com/leluongvien</string>
+</resources>

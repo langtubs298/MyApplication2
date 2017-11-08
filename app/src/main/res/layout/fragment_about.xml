@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/colorLightGrey"
+    tools:context="com.fragment.AboutFragment">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imageAuthor"
+        android:src="@mipmap/ic_vien"/>
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/about_margin"
+        android:layout_toRightOf="@+id/imageAuthor"
+        android:text="@string/author_app"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author"
+        android:layout_toRightOf="@+id/imageAuthor"
+        android:layout_marginLeft="@dimen/about_margin"
+        android:text="@string/email"
+        android:textColor="@color/colorRed" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_toRightOf="@+id/imageAuthor"
+        android:layout_marginLeft="@dimen/about_margin"
+        android:text="@string/facebook"
+        android:textColor="@color/colorBlue"/>
+
+</RelativeLayout>

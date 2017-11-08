@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pronunciation"
+            android:icon="@drawable/ic_icon_menu_pronunciation"
+            android:title="Phát âm" />
+        <item
+            android:id="@+id/nav_intonation"
+            android:icon="@drawable/ic_icon_menu_game"
+            android:title="Âm điệu" />
+
+        <item
+            android:id="@+id/nav_linking"
+            android:icon="@drawable/ic_icon_menu_game"
+            android:title="Nối âm" />
+        <item
+            android:id="@+id/nav_stress"
+            android:icon="@drawable/ic_icon_menu_game"
+            android:title="Nhấn âm" />
+
+        <item
+            android:id="@+id/nav_ask"
+            android:icon="@drawable/ic_icon_menu_game"
+            android:title="Đặt câu hỏi?" />
+        <item
+            android:id="@+id/nav_picture"
+            android:icon="@drawable/ic_icon_menu_picture"
+            android:title="Picture" />
+        <item
+            android:id="@+id/nav_flashCard"
+            android:icon="@drawable/ic_icon_menu_card"
+            android:title="Flash cards" />
+
+        <item
+            android:id="@+id/nav_esd"
+            android:icon="@drawable/ic_icon_menu_game"
+            android:title="(e)d và (e)s" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feedBack"
+                android:icon="@drawable/ic_icon_menu_feedback"
+                android:title="Feed back" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_icon_menu_information"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_setting"
+                android:title="Setting"
+                android:icon="@drawable/ic_menu_manage"/>
+        </menu>
+    </item>
+
+</menu>
