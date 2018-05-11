@@ -1,0 +1,202 @@
+<resources>
+  <dimen name="activity_horizontal_margin">
+    26.67dp
+  </dimen>
+  <dimen name="activity_vertical_margin">
+    26.67dp
+  </dimen>
+  <dimen name="nav_header_vertical_spacing">
+    26.67dp
+  </dimen>
+  <dimen name="nav_header_height">
+    266.67dp
+  </dimen>
+  <dimen name="fab_margin">
+    26.67dp
+  </dimen>
+  <dimen name="text_margin">
+    26.67dp
+  </dimen>
+  <dimen name="margin_top_button_play">
+    100.0dp
+  </dimen>
+  <dimen name="about_margin">
+    50.0dp
+  </dimen>
+  <dimen name="practice_word">
+    333.33dp
+  </dimen>
+  <dimen name="linking_word">
+    416.67dp
+  </dimen>
+  ..
+    
+  <dimen name="text_size_pronunciation">
+    25.0sp
+  </dimen>
+  <dimen name="text_size_time">
+    25.0sp
+  </dimen>
+  <dimen name="r_mainimage">
+    100.0dp
+  </dimen>
+  <dimen name="r_button_play">
+    83.33dp
+  </dimen>
+  <dimen name="r_video_pronun">
+    416.67dp
+  </dimen>
+  <dimen name="margin_left_pronun">
+    33.33dp
+  </dimen>
+  <dimen name="margin_right_pronun">
+    16.67dp
+  </dimen>
+  <dimen name="magin_right_image">
+    8.33dp
+  </dimen>
+  <dimen name="margin_bottom_video_pronun">
+    33.33dp
+  </dimen>
+  <dimen name="margin_left">
+    8.33dp
+  </dimen>
+  <dimen name="margin_leftofright">
+    8.33dp
+  </dimen>
+  <dimen name="margin_top">
+    6.67dp
+  </dimen>
+  <dimen name="margin_top_content">
+    25.0dp
+  </dimen>
+  <dimen name="width_button_practice">
+    250.0dp
+  </dimen>
+  <dimen name="height_button_practice">
+    83.33dp
+  </dimen>
+  <dimen name="margin_button_record">
+    50.0dp
+  </dimen>
+  <dimen name="corner_radius_cardView">
+    6.67dp
+  </dimen>
+  <dimen name="elevation_cardView">
+    5.0dp
+  </dimen>
+  <dimen name="cardView_height">
+    125.0dp
+  </dimen>
+  <dimen name="cardView_margin">
+    8.33dp
+  </dimen>
+  <dimen name="cardView_marginImage">
+    11.67dp
+  </dimen>
+  <dimen name="dialog_padding">
+    33.33dp
+  </dimen>
+  <dimen name="margin_cardView">
+    16.67dp
+  </dimen>
+  <dimen name="height_cardView">
+    166.67dp
+  </dimen>
+  <dimen name="record_margin_bottom">
+    16.67dp
+  </dimen>
+  <dimen name="record_margin_right">
+    16.67dp
+  </dimen>
+  <dimen name="chronometer_size">
+    100.0sp
+  </dimen>
+  <dimen name="chronometer_margin_bottom">
+    106.67dp
+  </dimen>
+  <dimen name="progressBar_size">
+    333.33dp
+  </dimen>
+  <dimen name="progressBar_margin_top">
+    45.0dp
+  </dimen>
+  <dimen name="sentence_text_size">
+    28.33sp
+  </dimen>
+  <dimen name="record_text_size">
+    28.33sp
+  </dimen>
+  <dimen name="sentence_text_margin_bottom">
+    166.67dp
+  </dimen>
+  <dimen name="record_text_margin_bottom">
+    66.67dp
+  </dimen>
+  <dimen name="register_text_width">
+    500.0dp
+  </dimen>
+  <dimen name="register_text_margin_top">
+    66.67dp
+  </dimen>
+  <dimen name="register_text_key_margin_top">
+    16.67dp
+  </dimen>
+  <dimen name="register_text_button_margin_top">
+    50.0dp
+  </dimen>
+  <dimen name="search_box_margin_top">
+    83.33dp
+  </dimen>
+  <dimen name="search_box_padding">
+    10.0dp
+  </dimen>
+  <dimen name="button_width">
+    183.33dp
+  </dimen>
+  <dimen name="button_height">
+    50.0dp
+  </dimen>
+  <dimen name="text_margin_top">
+    11.67dp
+  </dimen>
+  <dimen name="text_pronunciation_margin_top">
+    16.67dp
+  </dimen>
+  <dimen name="edit_text_width">
+    500.0dp
+  </dimen>
+  <dimen name="edit_text_height">
+    50.0dp
+  </dimen>
+  <dimen name="volume_margin_left">
+    25.0dp
+  </dimen>
+  <dimen name="text_size_score">
+    25.0sp
+  </dimen>
+  <dimen name="global_size">
+    83.33dp
+  </dimen>
+  <dimen name="global_margin">
+    33.33dp
+  </dimen>
+  <dimen name="logo_size">
+    200.0dp
+  </dimen>
+  <dimen name="logo_margin">
+    333.33dp
+  </dimen>
+  <dimen name="scroll_height">
+    91.67dp
+  </dimen>
+  <dimen name="text_size_1">
+    25.0sp
+  </dimen>
+  <dimen name="text_size_2">
+    33.33sp
+  </dimen>
+  <dimen name="text_size_3">
+    50.0sp
+  </dimen>
+</resources>

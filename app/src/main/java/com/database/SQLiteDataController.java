@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by HP on 29.08.2017.
+ * Created by Luong Vien on 29.08.2017.
  */
 
 public class SQLiteDataController extends SQLiteOpenHelper {
@@ -28,12 +28,6 @@ public class SQLiteDataController extends SQLiteOpenHelper {
         this.mContext = con;
     }
 
-    /**
-     * copy database from assets to the device if not existed
-     *
-     * @return true if not exist and create database success
-     * @throws IOException
-     */
     public boolean isCreatedDatabase() throws IOException {
         // Default là đã có DB
         boolean result = true;

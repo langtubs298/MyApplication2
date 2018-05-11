@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PicF</string>
+    <string name="app_name">El-Vi Pro</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,11 +8,71 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="intonation_introduce">Introduce something here</string>
     <string name="setting_text">Setting something here</string>
 
-    <!-- TODO: Information of Author-->
-    <string name="author_app">Created by: Le Luong Vien</string>
-    <string name="email">Email: Luongvien.binhson@gmail.com</string>
-    <string name="facebook">Facebook: Http://facebook.com/leluongvien</string>
+    <string name="pause_recording_button">Pause</string>
+    <string name="record_prompt">Nhấn để bắt đầu</string>
+
+    <!-- TODO: Ads-->
+    <string name="idAds">ca-app-pub-6406105887192068~6778064606</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6406105887192068/9561629323</string>
+    <string name="interstitial_id">ca-app-pub-6406105887192068/8007385797</string>
+    <string name="rewardedAds">ca-app-pub-6406105887192068/6168931808</string>
+
+    <!--- Record-->
+    <string name="default_file_name">My Recording</string>
+    <string name="toast_recording_finish">Bản ghi âm đã được lưu</string>
+    <string name="notification_recording">Đang ghi âm...</string>
+    <string name="toast_recording_start">Bắt đầu ghi âm</string>
+    <string name="resume_recording_button">Tiếp tục</string>
+    <string name="record_in_progress">Đang ghi âm</string>
+
+    <string name="dialog_file_share">Chia sẽ File</string>
+    <string name="dialog_file_rename">Đổi tên File</string>
+    <string name="dialog_file_delete">Xóa File</string>
+    <string name="dialog_title_options">Lựa chọn</string>
+    <string name="dialog_action_cancel">Hủy bỏ</string>
+    <string name="toast_file_delete">%1$s đã xóa thành công</string>
+    <string name="toast_file_exists">File %1$s đã tồn tại. Hãy chọn tên khác.</string>
+    <string name="send_to">Gửi đến</string>
+    <string name="dialog_title_rename">Đổi tên File</string>
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_title_delete">Chắc chắn xóa...</string>
+    <string name="dialog_text_delete">Bạn có muốn xóa file này?</string>
+    <string name="dialog_action_yes">Có</string>
+    <string name="dialog_action_no">Không</string>
+
+    <!-- TODO: GUIDE-->
+
+    <string name="linking_guide">Nối âm là hiện tượng ghép âm cuối của từ này với âm đầu của từ kế tiếp, hiện tượng thường xảy ra khi âm cuối của từ là phụ âm và âm đầu của từ kế tiếp là nguyên âm. Ngoài ra, xem thêm biến âm khi 2 phụ âm liên tiếp.</string>
+    <string name="stress_word_guide">Trọng âm trong 1 từ là hiện tượng âm tiêt của 1 từ được đọc to, rõ và dài hơn so với những âm tiết khác, trong phiên âm nó được đánh dấu bằng "'", có những từ giống nhau nhưng trọng âm khác nhau thì nghĩa nó sẽ khác nhau.</string>
+    <string name="stress_sentence_guide">Nhấn âm trong 1 câu là hiện tượng những từ của 1 từ được đọc to, rõ và dài hơn so với những từ khác, những từ này là chìa khóa của câu để người nghe chỉ cần nghe những từ này mà hiểu toàn bộ câu. Những từ còn lại có thể nói nhỏ hơn hoặc đôi lúc bị lượt bỏ</string>
+
+    <!-- spinner -->
+
+    <string-array name="register_item">
+        <item>Chọn gói</item>
+        <item>Tắt quảng cáo</item>
+        <item>Mua thêm từ</item>
+    </string-array>
+
+    <!-- About information -->
+
+    <string name="elvi">Phần mềm El-Vi Pro</string>
+    <string name="license_elvi">Được phát triển bởi Le Luong Vien, cùng với việc sử dụng Sound Recorder của Oleksandr Melnykov</string>
+    <string name="website">Fanpage:</string>
+    <string name="license_content_fab">\n\nNgười tạo: Le Luong Vien, 2018</string>
+    <string name="pay">Thông tin giá cước:</string>
+    <string name="cost1">G1: Tắt quảng cáo: 30K</string>
+    <string name="cost2">G2: Mua thêm 500 từ: 20K</string>
+    <string name="account">Chuyển đến:</string>
+    <string name="account1">TPBank: 01495933001-Le Luong Vien-Đà Nẵng</string>
+    <string name="account2">Ví momo: 0169.40.42.249</string>
+    <string name="information1">Thông tin kèm theo: Email + sdt + goi</string>
+    <string name="information2">Ví dụ: luongvien.binhson@gmail.com-01694042249-G1</string>
+
+    <!-- link page -->
+    <string name="page"><a href="https://www.facebook.com/Phần-mềm-El-Vi-420901241658782">Đi đến trang</a></string>
+    <string name="shop_detail">Chi tiết xem tại mục sản phẩm và sẽ được update tại: </string>
+
 </resources>

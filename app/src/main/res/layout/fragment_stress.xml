@@ -5,15 +5,10 @@
     tools:context="com.fragment.StressFragment">
 
     <!-- TODO: Update blank fragment layout -->
-   <Button
-       android:id="@+id/btnStressGuide"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Nó là gì?"/>
     <ListView
+        android:id="@+id/listStress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listStress"
-        android:layout_below="@+id/btnStressGuide"></ListView>
+        ></ListView>
 
 </RelativeLayout>

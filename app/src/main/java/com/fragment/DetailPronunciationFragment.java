@@ -3,50 +3,36 @@ package com.fragment;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.VideoView;
 
-import com.example.hp.PictF.R;
+import com.adapter.CustomPracticePronounAdapter;
+import com.something.hp.PictF.R;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.melnykov.fab.FloatingActionButton;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * to handle interaction events.
- * Use the {@link DetailPronunciationFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class DetailPronunciationFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+public class DetailPronunciationFragment extends Fragment implements CustomPracticePronounAdapter.CallbackInterface {
+    private static final int REQ_CODE_SPEECH_INPUT = 100;
     public int pronunc;
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    public String how;
+    private TextView mHow;
+    private InterstitialAd mInterstitialAd;
+    Boolean advertisement;
 
     public DetailPronunciationFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment DetailPronunciationFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static DetailPronunciationFragment newInstance(String param1, String param2) {
+    public static DetailPronunciationFragment newInstance() {
         DetailPronunciationFragment fragment = new DetailPronunciationFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -54,22 +40,59 @@ public class DetailPronunciationFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        MobileAds.initialize(getContext(), getString(R.string.idAds));
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
             pronunc = getArguments().getInt("pronunc");
+            how = getArguments().getString("how");
+            advertisement = getArguments().getBoolean("advertisement");
+        }
+        if(!advertisement){
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mInterstitialAd = new InterstitialAd(getActivity());
+            mInterstitialAd.setAdUnitId(getString(R.string.interstitial_id));
+            mInterstitialAd.loadAd(adRequest);
+
+            mInterstitialAd.setAdListener(new AdListener() {
+                @Override
+                public void onAdLoaded(){
+                    showInterstitial();
+                }
+            });
         }
     }
-
+    private void showInterstitial() {
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_detail_pronunciation, container, false);
+        mHow = (TextView) rootView.findViewById(R.id.txtUse);
+        mHow.setText(how);
+        FloatingActionButton btnPractice = (FloatingActionButton) rootView.findViewById(R.id.btnPractice);
+        btnPractice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PracticePronounFragment practicePronounFragment = new PracticePronounFragment();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                Bundle bundle = new Bundle();
+                bundle.putInt("pronunc", pronunc);
+                bundle.putBoolean("advertisement", advertisement);
+                FragmentTransaction transaction = manager.beginTransaction();
+                practicePronounFragment.setArguments(bundle);
+                //Khi được goi, fragment truyền vào sẽ thay thế vào vị trí FrameLayout trong Activity chính
+                transaction.replace(R.id.fmContent, practicePronounFragment);
+                transaction.addToBackStack("Frag1").commit();
+            }
+        });
         String path = "";
-        String path2 = "";
+
         final VideoView view = (VideoView) rootView.findViewById(R.id.videoPronunciation);
-        final VideoView view2 = (VideoView) rootView.findViewById(R.id.videoPronunciation2);
         switch (pronunc){
             case 1:
             {
@@ -78,6 +101,159 @@ public class DetailPronunciationFragment extends Fragment {
                 view.setVideoURI(Uri.parse(path));
                 break;
             }
+
+            case 2:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.si;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 3:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.uu;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 4:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.u;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 5:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.aa;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 6:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.aw;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 7:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.o;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 8:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.a;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 9:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.e;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 10:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ae;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 11:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ow;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 12:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.se;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 13:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ir;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 14:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.er;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 15:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ue;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 16:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ei;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 17:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ai;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 18:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.oi;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 19:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.ou;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
+            case 20:
+            {
+                path = "android.resource://" + getActivity().getPackageName() + "/"
+                        + R.raw.au;
+                view.setVideoURI(Uri.parse(path));
+                break;
+            }
+
             case 21:
             {
                 path = "android.resource://" + getActivity().getPackageName() + "/"
@@ -99,10 +275,6 @@ public class DetailPronunciationFragment extends Fragment {
                 path = "android.resource://" + getActivity().getPackageName() + "/"
                         + R.raw.t;
                 view.setVideoURI(Uri.parse(path));
-                path2 = "android.resource://" + getActivity().getPackageName() + "/"
-                        + R.raw.b;
-                view.setVideoURI(Uri.parse(path));
-                view2.setVideoURI(Uri.parse(path2));
                 break;
             }
             case 24:
@@ -265,25 +437,19 @@ public class DetailPronunciationFragment extends Fragment {
             default:
                 break;
         }
-        Button btnPlay = (Button) rootView.findViewById(R.id.btnPlayPronuciation);
-        Button btnPlay2 = (Button) rootView.findViewById(R.id.btnPlayPronuciation2);
+        FloatingActionButton btnPlay = (FloatingActionButton) rootView.findViewById(R.id.btnPlayPronunciation);
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                view.start();
-            }
+                    view.start();
+                }
         });
-        btnPlay2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                view2.start();
-            }
-        });
-
-
-
         return rootView;
     }
 
+    @Override
+    public void onHandleSelection(int position, String text, int pronunc, int table) {
+//        startVoiceInput();
+    }
 }

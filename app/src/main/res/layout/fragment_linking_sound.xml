@@ -5,14 +5,24 @@
     tools:context="com.fragment.LinkingSoundFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/btnLinkingsoundGuide"
+    <ScrollView
+        android:id="@+id/scrollLinking"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scroll_height">
+    <TextView
+        android:id="@+id/txtLinkingSoundGuide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hướng dẫn" />
-
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightTeal"
+        android:textSize="@dimen/text_size_pronunciation"
+        android:text="@string/linking_guide" />
+    </ScrollView>
     <ListView
+        android:id="@+id/listLinking"
+        android:layout_marginTop="@dimen/margin_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnLinkingsoundGuide"></ListView>
+        android:layout_below="@+id/scrollLinking"></ListView>
 </RelativeLayout>

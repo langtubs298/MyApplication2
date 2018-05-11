@@ -14,40 +14,21 @@ import com.adapter.CustomPronunciationAdapter;
 import com.database.SQLiteDataController;
 import com.database.SQLitePronunciation;
 import com.entity.Pronunciation;
-import com.example.hp.PictF.R;
+import com.something.hp.PictF.R;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class PronunciationFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
     ArrayList<Pronunciation> listPronunciation;
+    Boolean advertisement;
 
     public PronunciationFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PronunciationFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static PronunciationFragment newInstance(String param1, String param2) {
+    public static PronunciationFragment newInstance() {
         PronunciationFragment fragment = new PronunciationFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -56,6 +37,9 @@ public class PronunciationFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            advertisement = getArguments().getBoolean("advertisement");
+        }
         createDB();
         getListPronunciation();
     }
@@ -74,7 +58,6 @@ public class PronunciationFragment extends Fragment {
         SQLitePronunciation pronunciation = new SQLitePronunciation(getContext());
         listPronunciation = new ArrayList<>();
         listPronunciation = pronunciation.getListPronunciation();
-        System.out.printf("ff"+listPronunciation.size());
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -92,6 +75,8 @@ public class PronunciationFragment extends Fragment {
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 Bundle bundle = new Bundle();
                 bundle.putInt("pronunc", listPronunciation.get(position).getPronunciationID());
+                bundle.putString("how", listPronunciation.get(position).getDescription());
+                bundle.putBoolean("advertisement", advertisement);
                 FragmentTransaction transaction = manager.beginTransaction();
                 detailPronunciationFragment.setArguments(bundle);
                 //Khi được goi, fragment truyền vào sẽ thay thế vào vị trí FrameLayout trong Activity chính

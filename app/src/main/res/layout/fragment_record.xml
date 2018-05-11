@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_record"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPause"
+        android:drawableLeft="@mipmap/ic_media_pause"
+        android:text="@string/pause_recording_button"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/primary"
+        android:layout_marginBottom="@dimen/record_margin_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_mic_white_36dp" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btnListRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/primary"
+        android:layout_marginBottom="@dimen/record_margin_bottom"
+        android:layout_marginRight="@dimen/record_margin_right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_media_next" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:textSize="@dimen/chronometer_size"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignBottom="@+id/recordProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/chronometer_margin_bottom" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/recordProgressBar"
+        android:layout_width="@dimen/progressBar_size"
+        android:layout_height="@dimen/progressBar_size"
+        android:progressDrawable="@drawable/record_progress_bar"
+        android:background="@drawable/record_progress_bar_background"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="@dimen/progressBar_margin_top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/volume_margin_left"
+        android:id="@+id/recording_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/sentence_text_size"
+        android:textColor="@color/colorLightTeal"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/recordProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recording_status_text"
+        android:text="@string/record_prompt"
+        android:textStyle="bold"
+        android:textSize="@dimen/record_text_size"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_above="@+id/btnRecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/record_text_margin_bottom" />
+
+</RelativeLayout>

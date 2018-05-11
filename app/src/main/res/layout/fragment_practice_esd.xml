@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fragment.PracticeEsdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollEsd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scroll_height">
+    <TextView
+        android:id="@+id/txtRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_pronunciation"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightTeal"
+        android:layout_marginLeft="@dimen/margin_left_pronun"
+        android:layout_marginRight="@dimen/margin_right_pronun"/>
+    </ScrollView>
+    <ListView
+        android:layout_below="@+id/scrollEsd"
+        android:id="@+id/listPracticeEsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</RelativeLayout>

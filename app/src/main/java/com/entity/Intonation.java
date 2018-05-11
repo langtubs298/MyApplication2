@@ -1,35 +1,35 @@
 package com.entity;
 
 /**
- * Created by HP on 18.10.2017.
+ * Created by Luong Vien on 18.10.2017.
  */
 
 public class Intonation {
-    private int intonationId;
-    private String intonation;
+    private int id;
+    private String content;
 
     public Intonation(){
 
     }
 
-    public  Intonation(int intonationId, String intonation){
-        this.intonationId = intonationId;
-        this.intonation = intonation;
+    public  Intonation(int id, String content){
+        this.id = id;
+        this.content = content;
     }
 
     public int getIntonationId() {
-        return intonationId;
+        return id;
     }
 
-    public void setIntonationId(int intonationId) {
-        this.intonationId = intonationId;
+    public void setIntonationId(int id) {
+        this.id = id;
     }
 
     public String getIntonation() {
-        return intonation;
+        return content;
     }
 
-    public void setIntonation(String intonation) {
-        this.intonation = intonation;
+    public void setIntonation(String content) {
+        this.content = content;
     }
 }

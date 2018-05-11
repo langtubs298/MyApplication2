@@ -9,7 +9,7 @@ import com.entity.Intonation;
 import java.util.ArrayList;
 
 /**
- * Created by HP on 18.10.2017.
+ * Created by Luong Vien on 18.10.2017.
  */
 
 public class SQLiteIntonation extends SQLiteDataController {
@@ -22,12 +22,13 @@ public class SQLiteIntonation extends SQLiteDataController {
         ArrayList<Intonation> listIntonation = new ArrayList<>();
         try{
             openDataBase();
-            Cursor cs = database.rawQuery("select intonationID, intonation from INTONATION", null);
+            Cursor cs = database.rawQuery("select id, content from INTONATION", null);
             Intonation intonation;
             while (cs.moveToNext()) {
                 intonation = new Intonation(cs.getInt(0), cs.getString(1));
                 listIntonation.add(intonation);
             }
+            cs.close();
         }
         catch (SQLException e){
             e.printStackTrace();

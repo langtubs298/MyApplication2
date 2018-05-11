@@ -1,13 +1,29 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.fragment.NormalQuestionFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/scrollNormal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="@dimen/scroll_height">
+    <TextView
+        android:id="@+id/txtHowIntonation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_pronunciation"
+        android:layout_marginTop="@dimen/margin_left"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textColor="@color/colorLightTeal"
+        android:textStyle="bold"/>
+    </ScrollView>
+    <ListView
+        android:layout_below="@id/scrollNormal"
+        android:id="@+id/listSentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
 
-</FrameLayout>
+</RelativeLayout>

@@ -1,7 +1,7 @@
 package com.entity;
 
 /**
- * Created by HP on 18.10.2017.
+ * Created by Luong Vien on 18.10.2017.
  */
 
 public class Question {

@@ -1,20 +1,22 @@
 package com.entity;
 
 /**
- * Created by HP on 02.09.2017.
+ * Created by Luong Vien on 02.09.2017.
  */
 
 public class Pronunciation{
 
     private int pronunciationID;
     private String name;
+    private String description;
 
     public Pronunciation(){
     }
 
-    public  Pronunciation(int pronunciationID, String name){
+    public  Pronunciation(int pronunciationID, String name, String description){
         this.pronunciationID = pronunciationID;
         this.name = name;
+        this.description = description;
     }
     public int getPronunciationID() {
         return pronunciationID;
@@ -30,5 +32,13 @@ public class Pronunciation{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        description = description;
     }
 }

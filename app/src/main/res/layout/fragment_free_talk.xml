@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dic"
+    tools:context="com.fragment.FreeTalkFragment">
+
+    <TextView
+        android:id="@+id/textPassage"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_pronunciation"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorLightTeal"
+        android:text="Lời thoại"/>
+
+    <EditText
+        android:id="@+id/editPassage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardView_height"
+        android:layout_margin="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/rounded_edit"
+        android:padding="@dimen/margin_left"
+        android:textSize="@dimen/text_size_pronunciation"
+        android:layout_below="@+id/textPassage"/>
+
+    <LinearLayout
+        android:id="@+id/layout_free_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassage"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/btnFreeSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_volumn"
+            />
+
+        <ImageButton
+            android:id="@+id/btnFreeRecord"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_fileviewer"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

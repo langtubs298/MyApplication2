@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "297559386802",
+    "firebase_url": "https://picf-b87ec.firebaseio.com",
+    "project_id": "picf-b87ec",
+    "storage_bucket": "picf-b87ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297559386802:android:5c977e4b1873100c",
+        "android_client_info": {
+          "package_name": "com.something.hp.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297559386802-i1rfkibhi8lg5e3lnj9d7hp6h1ftu6ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsnJsF0VBkj2cI-QJF1QIO7Fe4Kmb2ghY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

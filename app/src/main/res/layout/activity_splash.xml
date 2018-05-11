@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue" >
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/global_size"
+        android:layout_height="@dimen/global_size"
+        android:id="@+id/progressBarAnimation"
+        android:progress="1"
+        android:progressDrawable="@drawable/circular_screen"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="@dimen/height_cardView"
+        android:layout_height="@dimen/height_cardView"
+        android:id="@+id/imgLogo"
+        android:src ="@drawable/ic_icon_app_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/progressBarAnimation"
+        android:layout_marginBottom="@dimen/margin_top" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progressBarAnimation"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Vui lòng chờ..."
+        android:textSize="@dimen/text_size_pronunciation"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/record_margin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:textSize="@dimen/text_size_1"
+        android:textStyle="bold"
+        android:text="@string/elvi"/>
+</RelativeLayout>

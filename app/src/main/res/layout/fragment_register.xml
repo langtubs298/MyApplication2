@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dic"
+    tools:context="com.fragment.RegisterFragment">
+
+    <Spinner
+        android:id="@+id/groupSelect"
+        android:layout_width="@dimen/practice_word"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/register_text_margin_top"
+        android:drawSelectorOnTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/register_item"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="@dimen/register_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupSelect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/register_text_key_margin_top"
+        android:hint="Địa chỉ Email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="@dimen/margin_top"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editSDT"
+        android:layout_width="@dimen/register_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editEmail"
+        android:layout_alignStart="@+id/editEmail"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="@dimen/register_text_key_margin_top"
+        android:drawableLeft="@drawable/ic_phone"
+        android:hint="So dien thoai"
+        android:drawablePadding="@dimen/margin_top"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editKey"
+        android:layout_width="@dimen/register_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editSDT"
+        android:layout_alignStart="@+id/editSDT"
+        android:layout_below="@+id/editSDT"
+        android:layout_marginTop="@dimen/register_text_key_margin_top"
+        android:drawableLeft="@drawable/ic_key"
+        android:hint="Mã"
+        android:drawablePadding="@dimen/margin_top"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editKey"
+        android:layout_alignLeft="@+id/editKey"
+        android:layout_alignRight="@+id/editKey"
+        android:layout_alignStart="@+id/editKey"
+        android:layout_below="@+id/editKey"
+        android:layout_marginTop="@dimen/register_text_button_margin_top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Xác nhận"
+        android:textColor="#FFFFFF"
+        android:ems="15" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/record_margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_1"
+            android:text="@string/shop_detail"/>
+
+        <TextView
+            android:id="@+id/page_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:textSize="@dimen/text_size_1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/page"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</RelativeLayout>

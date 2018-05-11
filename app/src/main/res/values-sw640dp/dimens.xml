@@ -1,0 +1,202 @@
+<resources>
+  <dimen name="activity_horizontal_margin">
+    28.44dp
+  </dimen>
+  <dimen name="activity_vertical_margin">
+    28.44dp
+  </dimen>
+  <dimen name="nav_header_vertical_spacing">
+    28.44dp
+  </dimen>
+  <dimen name="nav_header_height">
+    284.44dp
+  </dimen>
+  <dimen name="fab_margin">
+    28.44dp
+  </dimen>
+  <dimen name="text_margin">
+    28.44dp
+  </dimen>
+  <dimen name="margin_top_button_play">
+    106.67dp
+  </dimen>
+  <dimen name="about_margin">
+    53.33dp
+  </dimen>
+  <dimen name="practice_word">
+    355.56dp
+  </dimen>
+  <dimen name="linking_word">
+    444.44dp
+  </dimen>
+  ..
+    
+  <dimen name="text_size_pronunciation">
+    26.67sp
+  </dimen>
+  <dimen name="text_size_time">
+    26.67sp
+  </dimen>
+  <dimen name="r_mainimage">
+    106.67dp
+  </dimen>
+  <dimen name="r_button_play">
+    88.89dp
+  </dimen>
+  <dimen name="r_video_pronun">
+    444.44dp
+  </dimen>
+  <dimen name="margin_left_pronun">
+    35.56dp
+  </dimen>
+  <dimen name="margin_right_pronun">
+    17.78dp
+  </dimen>
+  <dimen name="magin_right_image">
+    8.89dp
+  </dimen>
+  <dimen name="margin_bottom_video_pronun">
+    35.56dp
+  </dimen>
+  <dimen name="margin_left">
+    8.89dp
+  </dimen>
+  <dimen name="margin_leftofright">
+    8.89dp
+  </dimen>
+  <dimen name="margin_top">
+    7.11dp
+  </dimen>
+  <dimen name="margin_top_content">
+    26.67dp
+  </dimen>
+  <dimen name="width_button_practice">
+    266.67dp
+  </dimen>
+  <dimen name="height_button_practice">
+    88.89dp
+  </dimen>
+  <dimen name="margin_button_record">
+    53.33dp
+  </dimen>
+  <dimen name="corner_radius_cardView">
+    7.11dp
+  </dimen>
+  <dimen name="elevation_cardView">
+    5.33dp
+  </dimen>
+  <dimen name="cardView_height">
+    133.33dp
+  </dimen>
+  <dimen name="cardView_margin">
+    8.89dp
+  </dimen>
+  <dimen name="cardView_marginImage">
+    12.44dp
+  </dimen>
+  <dimen name="dialog_padding">
+    35.56dp
+  </dimen>
+  <dimen name="margin_cardView">
+    17.78dp
+  </dimen>
+  <dimen name="height_cardView">
+    177.78dp
+  </dimen>
+  <dimen name="record_margin_bottom">
+    17.78dp
+  </dimen>
+  <dimen name="record_margin_right">
+    17.78dp
+  </dimen>
+  <dimen name="chronometer_size">
+    106.67sp
+  </dimen>
+  <dimen name="chronometer_margin_bottom">
+    113.78dp
+  </dimen>
+  <dimen name="progressBar_size">
+    355.56dp
+  </dimen>
+  <dimen name="progressBar_margin_top">
+    48.0dp
+  </dimen>
+  <dimen name="sentence_text_size">
+    30.22sp
+  </dimen>
+  <dimen name="record_text_size">
+    30.22sp
+  </dimen>
+  <dimen name="sentence_text_margin_bottom">
+    177.78dp
+  </dimen>
+  <dimen name="record_text_margin_bottom">
+    71.11dp
+  </dimen>
+  <dimen name="register_text_width">
+    533.33dp
+  </dimen>
+  <dimen name="register_text_margin_top">
+    71.11dp
+  </dimen>
+  <dimen name="register_text_key_margin_top">
+    17.78dp
+  </dimen>
+  <dimen name="register_text_button_margin_top">
+    53.33dp
+  </dimen>
+  <dimen name="search_box_margin_top">
+    88.89dp
+  </dimen>
+  <dimen name="search_box_padding">
+    10.67dp
+  </dimen>
+  <dimen name="button_width">
+    195.56dp
+  </dimen>
+  <dimen name="button_height">
+    53.33dp
+  </dimen>
+  <dimen name="text_margin_top">
+    12.44dp
+  </dimen>
+  <dimen name="text_pronunciation_margin_top">
+    17.78dp
+  </dimen>
+  <dimen name="edit_text_width">
+    533.33dp
+  </dimen>
+  <dimen name="edit_text_height">
+    53.33dp
+  </dimen>
+  <dimen name="volume_margin_left">
+    26.67dp
+  </dimen>
+  <dimen name="text_size_score">
+    26.67sp
+  </dimen>
+  <dimen name="global_size">
+    88.89dp
+  </dimen>
+  <dimen name="global_margin">
+    35.56dp
+  </dimen>
+  <dimen name="logo_size">
+    213.33dp
+  </dimen>
+  <dimen name="logo_margin">
+    355.56dp
+  </dimen>
+  <dimen name="scroll_height">
+    97.78dp
+  </dimen>
+  <dimen name="text_size_1">
+    26.67sp
+  </dimen>
+  <dimen name="text_size_2">
+    35.56sp
+  </dimen>
+  <dimen name="text_size_3">
+    53.33sp
+  </dimen>
+</resources>

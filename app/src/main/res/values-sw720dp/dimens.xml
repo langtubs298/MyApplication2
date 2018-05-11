@@ -1,0 +1,202 @@
+<resources>
+  <dimen name="activity_horizontal_margin">
+    32.0dp
+  </dimen>
+  <dimen name="activity_vertical_margin">
+    32.0dp
+  </dimen>
+  <dimen name="nav_header_vertical_spacing">
+    32.0dp
+  </dimen>
+  <dimen name="nav_header_height">
+    320.0dp
+  </dimen>
+  <dimen name="fab_margin">
+    32.0dp
+  </dimen>
+  <dimen name="text_margin">
+    32.0dp
+  </dimen>
+  <dimen name="margin_top_button_play">
+    120.0dp
+  </dimen>
+  <dimen name="about_margin">
+    60.0dp
+  </dimen>
+  <dimen name="practice_word">
+    400.0dp
+  </dimen>
+  <dimen name="linking_word">
+    500.0dp
+  </dimen>
+  ..
+    
+  <dimen name="text_size_pronunciation">
+    30.0sp
+  </dimen>
+  <dimen name="text_size_time">
+    30.0sp
+  </dimen>
+  <dimen name="r_mainimage">
+    120.0dp
+  </dimen>
+  <dimen name="r_button_play">
+    100.0dp
+  </dimen>
+  <dimen name="r_video_pronun">
+    500.0dp
+  </dimen>
+  <dimen name="margin_left_pronun">
+    40.0dp
+  </dimen>
+  <dimen name="margin_right_pronun">
+    20.0dp
+  </dimen>
+  <dimen name="magin_right_image">
+    10.0dp
+  </dimen>
+  <dimen name="margin_bottom_video_pronun">
+    40.0dp
+  </dimen>
+  <dimen name="margin_left">
+    10.0dp
+  </dimen>
+  <dimen name="margin_leftofright">
+    10.0dp
+  </dimen>
+  <dimen name="margin_top">
+    8.0dp
+  </dimen>
+  <dimen name="margin_top_content">
+    30.0dp
+  </dimen>
+  <dimen name="width_button_practice">
+    300.0dp
+  </dimen>
+  <dimen name="height_button_practice">
+    100.0dp
+  </dimen>
+  <dimen name="margin_button_record">
+    60.0dp
+  </dimen>
+  <dimen name="corner_radius_cardView">
+    8.0dp
+  </dimen>
+  <dimen name="elevation_cardView">
+    6.0dp
+  </dimen>
+  <dimen name="cardView_height">
+    150.0dp
+  </dimen>
+  <dimen name="cardView_margin">
+    10.0dp
+  </dimen>
+  <dimen name="cardView_marginImage">
+    14.0dp
+  </dimen>
+  <dimen name="dialog_padding">
+    40.0dp
+  </dimen>
+  <dimen name="margin_cardView">
+    20.0dp
+  </dimen>
+  <dimen name="height_cardView">
+    200.0dp
+  </dimen>
+  <dimen name="record_margin_bottom">
+    20.0dp
+  </dimen>
+  <dimen name="record_margin_right">
+    20.0dp
+  </dimen>
+  <dimen name="chronometer_size">
+    120.0sp
+  </dimen>
+  <dimen name="chronometer_margin_bottom">
+    128.0dp
+  </dimen>
+  <dimen name="progressBar_size">
+    400.0dp
+  </dimen>
+  <dimen name="progressBar_margin_top">
+    54.0dp
+  </dimen>
+  <dimen name="sentence_text_size">
+    34.0sp
+  </dimen>
+  <dimen name="record_text_size">
+    34.0sp
+  </dimen>
+  <dimen name="sentence_text_margin_bottom">
+    200.0dp
+  </dimen>
+  <dimen name="record_text_margin_bottom">
+    80.0dp
+  </dimen>
+  <dimen name="register_text_width">
+    600.0dp
+  </dimen>
+  <dimen name="register_text_margin_top">
+    80.0dp
+  </dimen>
+  <dimen name="register_text_key_margin_top">
+    20.0dp
+  </dimen>
+  <dimen name="register_text_button_margin_top">
+    60.0dp
+  </dimen>
+  <dimen name="search_box_margin_top">
+    100.0dp
+  </dimen>
+  <dimen name="search_box_padding">
+    12.0dp
+  </dimen>
+  <dimen name="button_width">
+    220.0dp
+  </dimen>
+  <dimen name="button_height">
+    60.0dp
+  </dimen>
+  <dimen name="text_margin_top">
+    14.0dp
+  </dimen>
+  <dimen name="text_pronunciation_margin_top">
+    20.0dp
+  </dimen>
+  <dimen name="edit_text_width">
+    600.0dp
+  </dimen>
+  <dimen name="edit_text_height">
+    60.0dp
+  </dimen>
+  <dimen name="volume_margin_left">
+    30.0dp
+  </dimen>
+  <dimen name="text_size_score">
+    30.0sp
+  </dimen>
+  <dimen name="global_size">
+    100.0dp
+  </dimen>
+  <dimen name="global_margin">
+    40.0dp
+  </dimen>
+  <dimen name="logo_size">
+    240.0dp
+  </dimen>
+  <dimen name="logo_margin">
+    400.0dp
+  </dimen>
+  <dimen name="scroll_height">
+    110.0dp
+  </dimen>
+  <dimen name="text_size_1">
+    30.0sp
+  </dimen>
+  <dimen name="text_size_2">
+    40.0sp
+  </dimen>
+  <dimen name="text_size_3">
+    60.0sp
+  </dimen>
+</resources>

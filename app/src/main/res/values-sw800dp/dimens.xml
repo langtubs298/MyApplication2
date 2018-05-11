@@ -1,0 +1,202 @@
+<resources>
+  <dimen name="activity_horizontal_margin">
+    35.56dp
+  </dimen>
+  <dimen name="activity_vertical_margin">
+    35.56dp
+  </dimen>
+  <dimen name="nav_header_vertical_spacing">
+    35.56dp
+  </dimen>
+  <dimen name="nav_header_height">
+    355.56dp
+  </dimen>
+  <dimen name="fab_margin">
+    35.56dp
+  </dimen>
+  <dimen name="text_margin">
+    35.56dp
+  </dimen>
+  <dimen name="margin_top_button_play">
+    133.33dp
+  </dimen>
+  <dimen name="about_margin">
+    66.67dp
+  </dimen>
+  <dimen name="practice_word">
+    444.44dp
+  </dimen>
+  <dimen name="linking_word">
+    555.56dp
+  </dimen>
+  ..
+    
+  <dimen name="text_size_pronunciation">
+    33.33sp
+  </dimen>
+  <dimen name="text_size_time">
+    33.33sp
+  </dimen>
+  <dimen name="r_mainimage">
+    133.33dp
+  </dimen>
+  <dimen name="r_button_play">
+    111.11dp
+  </dimen>
+  <dimen name="r_video_pronun">
+    555.56dp
+  </dimen>
+  <dimen name="margin_left_pronun">
+    44.44dp
+  </dimen>
+  <dimen name="margin_right_pronun">
+    22.22dp
+  </dimen>
+  <dimen name="magin_right_image">
+    11.11dp
+  </dimen>
+  <dimen name="margin_bottom_video_pronun">
+    44.44dp
+  </dimen>
+  <dimen name="margin_left">
+    11.11dp
+  </dimen>
+  <dimen name="margin_leftofright">
+    11.11dp
+  </dimen>
+  <dimen name="margin_top">
+    8.89dp
+  </dimen>
+  <dimen name="margin_top_content">
+    33.33dp
+  </dimen>
+  <dimen name="width_button_practice">
+    333.33dp
+  </dimen>
+  <dimen name="height_button_practice">
+    111.11dp
+  </dimen>
+  <dimen name="margin_button_record">
+    66.67dp
+  </dimen>
+  <dimen name="corner_radius_cardView">
+    8.89dp
+  </dimen>
+  <dimen name="elevation_cardView">
+    6.67dp
+  </dimen>
+  <dimen name="cardView_height">
+    166.67dp
+  </dimen>
+  <dimen name="cardView_margin">
+    11.11dp
+  </dimen>
+  <dimen name="cardView_marginImage">
+    15.56dp
+  </dimen>
+  <dimen name="dialog_padding">
+    44.44dp
+  </dimen>
+  <dimen name="margin_cardView">
+    22.22dp
+  </dimen>
+  <dimen name="height_cardView">
+    222.22dp
+  </dimen>
+  <dimen name="record_margin_bottom">
+    22.22dp
+  </dimen>
+  <dimen name="record_margin_right">
+    22.22dp
+  </dimen>
+  <dimen name="chronometer_size">
+    133.33sp
+  </dimen>
+  <dimen name="chronometer_margin_bottom">
+    142.22dp
+  </dimen>
+  <dimen name="progressBar_size">
+    444.44dp
+  </dimen>
+  <dimen name="progressBar_margin_top">
+    60.0dp
+  </dimen>
+  <dimen name="sentence_text_size">
+    37.78sp
+  </dimen>
+  <dimen name="record_text_size">
+    37.78sp
+  </dimen>
+  <dimen name="sentence_text_margin_bottom">
+    222.22dp
+  </dimen>
+  <dimen name="record_text_margin_bottom">
+    88.89dp
+  </dimen>
+  <dimen name="register_text_width">
+    666.67dp
+  </dimen>
+  <dimen name="register_text_margin_top">
+    88.89dp
+  </dimen>
+  <dimen name="register_text_key_margin_top">
+    22.22dp
+  </dimen>
+  <dimen name="register_text_button_margin_top">
+    66.67dp
+  </dimen>
+  <dimen name="search_box_margin_top">
+    111.11dp
+  </dimen>
+  <dimen name="search_box_padding">
+    13.33dp
+  </dimen>
+  <dimen name="button_width">
+    244.44dp
+  </dimen>
+  <dimen name="button_height">
+    66.67dp
+  </dimen>
+  <dimen name="text_margin_top">
+    15.56dp
+  </dimen>
+  <dimen name="text_pronunciation_margin_top">
+    22.22dp
+  </dimen>
+  <dimen name="edit_text_width">
+    666.67dp
+  </dimen>
+  <dimen name="edit_text_height">
+    66.67dp
+  </dimen>
+  <dimen name="volume_margin_left">
+    33.33dp
+  </dimen>
+  <dimen name="text_size_score">
+    33.33sp
+  </dimen>
+  <dimen name="global_size">
+    111.11dp
+  </dimen>
+  <dimen name="global_margin">
+    44.44dp
+  </dimen>
+  <dimen name="logo_size">
+    266.67dp
+  </dimen>
+  <dimen name="logo_margin">
+    444.44dp
+  </dimen>
+  <dimen name="scroll_height">
+    122.22dp
+  </dimen>
+  <dimen name="text_size_1">
+    33.33sp
+  </dimen>
+  <dimen name="text_size_2">
+    44.44sp
+  </dimen>
+  <dimen name="text_size_3">
+    66.67sp
+  </dimen>
+</resources>

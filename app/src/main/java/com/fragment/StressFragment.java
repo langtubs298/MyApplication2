@@ -2,47 +2,31 @@ package com.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import com.adapter.CustomStressAdapter;
+import com.database.SQLiteDataController;
+import com.database.SQLiteListIntonation;
+import com.entity.Sentence;
+import com.something.hp.PictF.R;
+import java.io.IOException;
+import java.util.ArrayList;
 
-import com.example.hp.PictF.R;
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * to handle interaction events.
- * Use the {@link StressFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class StressFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    public ArrayList<Sentence> listStress;
+    Boolean advertisement;
 
     public StressFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment StressFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static StressFragment newInstance(String param1, String param2) {
+    public static StressFragment newInstance() {
         StressFragment fragment = new StressFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,15 +35,58 @@ public class StressFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            advertisement = getArguments().getBoolean("advertisement");
         }
+        createDB();
+        getListStress();
     }
 
+    private void createDB(){
+        SQLiteDataController sql = new SQLiteDataController(getActivity());
+        try{
+            sql.isCreatedDatabase();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private void getListStress(){
+        SQLiteListIntonation sqLiteListIntonation = new SQLiteListIntonation(getContext());
+        listStress = new ArrayList<>();
+        listStress = sqLiteListIntonation.getListStress();
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_stress, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_stress, container, false);
+        ListView listView = (ListView) rootView.findViewById(R.id.listStress);
+        CustomStressAdapter adapter = new CustomStressAdapter(getContext(), R.layout.stress_list_item, listStress);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0){
+                    StressWordFragment stressWordFragment = new StressWordFragment();
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    Bundle bundle = new Bundle();
+                    bundle.putBoolean("advertisement", advertisement);
+                    stressWordFragment.setArguments(bundle);
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fmContent, stressWordFragment);
+                    transaction.addToBackStack("Frag1").commit();
+                }
+                else {
+                    StressSentenceFragment stressSentenceFragment = new StressSentenceFragment();
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    Bundle bundle = new Bundle();
+                    bundle.putBoolean("advertisement", advertisement);
+                    stressSentenceFragment.setArguments(bundle);
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fmContent, stressSentenceFragment);
+                    transaction.addToBackStack("Frag1").commit();
+                }
+            }
+        });
+        return rootView;
     }
 }

@@ -4,15 +4,8 @@
     android:layout_height="match_parent"
     tools:context="com.fragment.IntonationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/intonation_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/intonation_introduce" />
     <ListView
         android:id="@+id/listIntonation"
-        android:layout_below="@+id/intonation_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

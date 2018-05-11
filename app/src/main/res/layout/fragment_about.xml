@@ -1,44 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    android:background="@color/colorLightGrey"
-    tools:context="com.fragment.AboutFragment">
-
-    <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:id="@+id/imageAuthor"
-        android:src="@mipmap/ic_vien"/>
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/author"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/about_margin"
-        android:layout_toRightOf="@+id/imageAuthor"
-        android:text="@string/author_app"
-        android:textColor="@color/colorBlack" />
+    android:layout_marginLeft="@dimen/margin_left"
+    android:layout_marginStart="@dimen/margin_left"
+    android:layout_marginTop="10dp">
 
     <TextView
-        android:id="@+id/email"
-        android:layout_width="match_parent"
+        android:id="@+id/textElvi"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/author"
-        android:layout_toRightOf="@+id/imageAuthor"
-        android:layout_marginLeft="@dimen/about_margin"
-        android:text="@string/email"
-        android:textColor="@color/colorRed" />
+        android:textSize="@dimen/text_size_2"
+        android:textStyle="bold"
+        android:text="@string/elvi"/>
 
     <TextView
+        android:id="@+id/textLicenseElvi"
+        android:layout_below="@+id/textElvi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:textStyle="italic"
+        android:text="@string/license_elvi"/>
+
+    <TextView
+        android:id="@+id/textWeb"
+        android:layout_below="@+id/textLicenseElvi"
+        android:layout_marginTop="@dimen/margin_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/email"
-        android:layout_toRightOf="@+id/imageAuthor"
-        android:layout_marginLeft="@dimen/about_margin"
-        android:text="@string/facebook"
-        android:textColor="@color/colorBlue"/>
+        android:textSize="@dimen/text_size_2"
+        android:textStyle="bold"
+        android:text="@string/website"/>
+    <TextView
+        android:layout_below="@+id/textWeb"
+        android:id="@+id/textLink"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/page"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/record_margin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:textSize="@dimen/text_size_1"
+        android:textStyle="italic"
+        android:text="@string/license_content_fab"/>
+
+    <TextView
+        android:id="@+id/textPay"
+        android:layout_below="@+id/textLink"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_2"
+        android:textStyle="bold"
+        android:text="@string/pay"/>
+    <TextView
+        android:layout_below="@+id/textPay"
+        android:id="@+id/textCost1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cost1"/>
+    <TextView
+        android:layout_below="@+id/textCost1"
+        android:id="@+id/textCost2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cost2"/>
+
+    <TextView
+        android:id="@+id/textAccount"
+        android:layout_below="@+id/textCost2"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_2"
+        android:textStyle="bold"
+        android:text="@string/account"/>
+
+    <TextView
+        android:layout_below="@+id/textAccount"
+        android:id="@+id/textAccount1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/account1"/>
+
+    <TextView
+        android:layout_below="@+id/textAccount1"
+        android:id="@+id/textAccount2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/account2"/>
+    <TextView
+        android:layout_below="@+id/textAccount2"
+        android:id="@+id/infor1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/information1"/>
+    <TextView
+        android:layout_below="@+id/infor1"
+        android:id="@+id/infor2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/information2"/>
+
+    <!-- PagerSlidingTabStrip -->
 
 </RelativeLayout>

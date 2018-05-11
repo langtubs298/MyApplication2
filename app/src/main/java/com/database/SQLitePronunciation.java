@@ -9,7 +9,7 @@ import com.entity.Pronunciation;
 import java.util.ArrayList;
 
 /**
- * Created by HP on 02.09.2017.
+ * Created by Luong Vien on 02.09.2017.
  */
 
 public class SQLitePronunciation extends SQLiteDataController {
@@ -21,12 +21,13 @@ public class SQLitePronunciation extends SQLiteDataController {
         ArrayList<Pronunciation> listPronunciation = new ArrayList<>();
         try{
             openDataBase();
-            Cursor cs = database.rawQuery("select pronunciationID, name from PRONUNCIATION", null);
+            Cursor cs = database.rawQuery("select pronunciationID, name, description from PRONUNCIATION", null);
             Pronunciation pronunciation;
             while (cs.moveToNext()){
-                pronunciation = new Pronunciation(cs.getInt(0),cs.getString(1));
+                pronunciation = new Pronunciation(cs.getInt(0),cs.getString(1), cs.getString(2));
                 listPronunciation.add(pronunciation);
             }
+            cs.close();
         }
         catch (SQLException e){
             e.printStackTrace();
